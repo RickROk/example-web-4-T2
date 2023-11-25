@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "nuxt-vitest"],
   postcss: {
     plugins: {
       tailwindcss: {},
