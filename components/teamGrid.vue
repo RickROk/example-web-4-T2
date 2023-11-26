@@ -110,14 +110,14 @@
           </div> 
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/neil-sims.png" alt="Avatar">
+                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="Avatar">
               </a>
               <div class="p-5">
                   <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <a href="#">Загул Кирилл</a>
                   </h3>
-                  <span class="text-gray-500 dark:text-gray-400">Front-end Developer</span>
-                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>
+                  <span class="text-gray-500 dark:text-gray-400">Full-stack Developer</span>
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Кирилл - опытный фулстек разработчик, способен решать сложные задачи и обеспечивать высокое качество разработки.</p>
                   <ul class="flex space-x-4 sm:mt-0">
                       <li>
                           <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
@@ -144,14 +144,14 @@
           </div>
           <div class="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="Avatar">
+                  <img class="w-full rounded-lg sm:rounded-none sm:rounded-l-lg" src="https://webmotus.ru/wp-content/uploads/2023/11/AlexsanderKovalev.jpg" alt="Avatar">
               </a>
               <div class="p-5">
                   <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                       <a href="#">Ковалёв Александр</a>
                   </h3>
                   <span class="text-gray-500 dark:text-gray-400">Web Developer</span>
-                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Lana drives the technical strategy of the flowbite platform and brand.</p>
+                  <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Александр имеет большой опыт в проработке бизнес-решений, улучшающие эффективность всех бизнес-процессов.</p>
                   <ul class="flex space-x-4 sm:mt-0">
                       <li>
                           <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
