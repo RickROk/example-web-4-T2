@@ -4,15 +4,7 @@ const description = ref("технологии программирования, 
 </script>
 
 <template>
-  <Html>
-    <Head>
-      <Title>{{ title }}</Title>
-      <Meta name="description" :content="description" />
-      <meta property="og:description" :content="description" />
-      <meta property="og:image" content="" />
-      <meta property="og:type" content="" />
-      <meta property="og:url" content="" />
-    </Head>
+  <Html>    
     <Body class="bg-white">
       <NuxtLayout>
         <NuxtLoadingIndicator />
