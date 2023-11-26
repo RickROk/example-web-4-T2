@@ -31,6 +31,6 @@
     </nav>
 </header>
     <TeamGrid></TeamGrid>
-    <Discription></Discription>
+    <Description></Description>
   </div>
 </template>
