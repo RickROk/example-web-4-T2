@@ -14,4 +14,7 @@ export default defineNuxtConfig({
     url: "http://localhost:6006",
     port: 6006,
   },
+  nitro: {
+    // Nitro options
+  },
 });
