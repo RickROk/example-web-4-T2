@@ -1,3 +1,6 @@
+
+import type PriceBlockVue from '~/components/PriceBlock.vue';
+
 <template>
   <div>
     <header>
@@ -26,5 +29,6 @@
 </header>
     <TeamGrid></TeamGrid>
     <Description></Description>
+    <PriceBlock></PriceBlock>
   </div>
 </template>
