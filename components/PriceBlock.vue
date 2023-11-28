@@ -12,7 +12,7 @@
               <h3 class="mb-4 text-2xl font-semibold">Сайты</h3>
               <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Вы можете заказать разработку сайта любой сложности и любого формата с различными интеграциями.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">от 1 млн руб.</span>
+                  <span class="mr-2 text-3xl font-extrabold">от 1 млн руб.</span>
               </div>
               <!-- List -->
               <ul role="list" class="mb-8 space-y-4 text-left">
