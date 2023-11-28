@@ -44,7 +44,7 @@
               <h3 class="mb-4 text-2xl font-semibold">Вебприложения</h3>
               <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Программы, способе работать полноценно даже без установки на устройство.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">от 1 до 3 млн руб.</span>
+                  <span class="mr-2 text-3xl font-extrabold">от 1 до 3 млн руб.</span>
               </div>
               <!-- List -->
               <ul role="list" class="mb-8 space-y-4 text-left">
@@ -73,10 +73,10 @@
           </div>
           <!-- Pricing Card -->
           <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
-              <h3 class="mb-4 text-2xl font-semibold">Техническая поддержка и доработка</h3>
-              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Наша команда умеет и любит работать с нетривиальными архитектурами и интеграциями.</p>
+              <h3 class="mb-4 text-2xl font-semibold">Поддержка и доработка</h3>
+              <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">Умеем и любим работать с нетривиальными архитектурами и интеграциями.</p>
               <div class="flex justify-center items-baseline my-8">
-                  <span class="mr-2 text-5xl font-extrabold">от 100 тр.</span>
+                  <span class="mr-2 text-3xl font-extrabold">от 100 тр.</span>
                   <span class="text-gray-500 dark:text-gray-400">/месяц</span>
               </div>
               <!-- List -->
