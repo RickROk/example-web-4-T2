@@ -1,8 +1,9 @@
 <script setup></script>
 
 <template>
-  <div class="w-full px-16">
+  <div class="w-full">
+    <LayoutHeader />
     <slot />
-    <LayoutFooter></LayoutFooter>
+    <LayoutFooter />
   </div>
 </template>

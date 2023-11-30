@@ -1,11 +1,15 @@
-<script setup>
-const title = ref("Команда 2");
+<script setup lang="ts">
+const title = ref("TechnoProg");
 const description = ref("технологии программирования, команда 2");
 </script>
 
 <template>
-  <Html>    
-    <Body class="bg-white">
+  <Html>
+    <Head>
+      <Title>{{ title }}</Title>
+      <Meta name="description" :content="description" />
+    </Head>
+    <Body class="h-screen bg-white dark:bg-gray-900">
       <NuxtLayout>
         <NuxtLoadingIndicator />
         <NuxtPage />
