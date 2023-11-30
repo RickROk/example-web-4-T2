@@ -3,7 +3,9 @@
 <template>
   <div class="w-full">
     <LayoutHeader />
-    <slot />
+    <div class="pt-32">
+      <slot />
+    </div>
     <LayoutFooter />
   </div>
 </template>

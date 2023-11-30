@@ -3,7 +3,7 @@ const navs = ref(["О нас", "Рекомендации", "Контакты", "
 </script>
 
 <template>
-  <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+  <footer class="p-4 w-full bg-white md:p-8 lg:p-10 dark:bg-gray-800">
     <div class="mx-auto max-w-screen-xl text-center">
       <NuxtLink
         to="/"

@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="pt-32">
+  <div class="">
     <BlocksTitle />
     <BlocksTeamGrid />
     <BlocksDescription />
