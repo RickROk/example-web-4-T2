@@ -1,17 +1,40 @@
-import { APIFetchFactory } from "~/app/shared/http/fetchFactory";
-import type { FetchConfig } from "~/app/shared/http/fetchFactory";
+// import type { AxiosResponse, AxiosRequestConfig, AxiosInstance } from "axios";
+// import axios from "axios";
+// import { APIFetchFactory } from "~/app/shared/http/fetchFactory";
+// import type { FetchConfig } from "~/app/shared/http/fetchFactory";
+// import { Project } from "~/app/modules/project/domain";
 
-const projectFetch = new APIFetchFactory();
+// const config = {};
 
-async function projectAsyncData(config: FetchConfig): Promise<any> {
-  try {
-    const { data, refresh, pending, status } = await useAsyncData(() =>
-      projectFetch.create(config),
-    );
-    return { data, refresh, pending, status };
-  } catch (error: unknown) {
-    console.error("Error fetching: ", error);
-  }
-}
+// // const projectService = new APIFetchFactory(
+// //   `https://jsonplaceholder.typicode.com/posts`,
+// // );
 
-export { projectFetch, projectAsyncData };
+// export class ProjectService extends APIFetchFactory<Project> {
+//   constructor(baseURL: string) {
+//     super(baseURL);
+//   }
+
+//   create(config: FetchConfig): Promise<AxiosResponse<any, any>> {
+//     throw new Error("Method not implemented.");
+//   }
+
+//   async get<Project>(
+//     url: string,
+//     config?: AxiosRequestConfig<any> | undefined,
+//   ): Promise<Project> {
+//     return await this.get<Project>(url, config);
+//   }
+// }
+import {
+  FetchService,
+  AxiosCreator,
+} from "~/app/shared/http/instances/axiosInstance";
+
+const axiosService = new AxiosCreator();
+
+const projectService = new FetchService(axiosService, ``).initService(
+  `https://jsonplaceholder.typicode.com/`,
+);
+
+export { projectService };

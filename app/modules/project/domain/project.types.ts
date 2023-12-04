@@ -1,5 +1,9 @@
-export interface IProject {
+export interface IProjectData {
   id?: string | number;
+}
+
+export interface IProject extends IProjectData {
+  getInfo(): void;
 }
 
 export class Project implements IProject {
@@ -11,5 +15,9 @@ export class Project implements IProject {
 
   get id() {
     return this._id;
+  }
+
+  getInfo(): void {
+    throw new Error("Method not implemented.");
   }
 }

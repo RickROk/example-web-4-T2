@@ -1,45 +1,23 @@
-const ENDPOINT = "http://localhost:3000" || process.env.API_URL;
+import axios from "axios";
+import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
+import { err, Err, Result } from "neverthrow";
+import { baseURL } from "nuxt/dist/core/runtime/nitro/paths";
+import { ParseError } from "../error/ParseError";
+import { HttpError } from "./HttpError";
 
-export type FetchConfig = {
-  method?: "get" | "post";
-  baseURL: string;
-  headers?: Record<string, string>;
-  body?: Record<string, any>;
-  query?: Record<string, any>;
-  responseType?: any;
-};
+import type { Parser, IHttpRequest, httpInstance } from "./fetchFactory.types";
 
-export abstract class FetchFactory {
-  abstract create(config: FetchConfig): Promise<Response>;
+export interface IFetchFactory {
+  initService(baseUrl: string): void;
+  // create(config: FetchConfig): Promise<AxiosResponse>;
+  // interceptors(): any;
+  get<T, M>(
+    request: IHttpRequest,
+    parser: Parser<T, M>,
+  ): Promise<Result<M, ParseError | HttpError>>;
+  // post<R>(url: string, data?: T, config?: FetchConfig): Promise<R>;
 }
 
-export class APIFetchFactory extends FetchFactory {
-  create(config: FetchConfig): Promise<Response> {
-    const { method, baseURL, headers, body, query } = config;
-
-    const url = new URL(baseURL);
-
-    return $fetch(url.toString(), {
-      method,
-      headers: {
-        "Content-Type": "application/json",
-        ...(headers || {}),
-      },
-      query,
-      body: body ? JSON.stringify(body) : undefined,
-    });
-  }
+export interface IhttpCreator {
+  createInstance(baseUrl: string): httpInstance;
 }
-
-// const config: FetchConfig = {
-//   baseURL: ENDPOINT,
-//   headers: {
-//     Accept: "application/json, text/plain, */*",
-//     "X-Requested-With": "XMLHttpRequest",
-//   },
-// };
-
-// const APIFetch = new APIFetchFactory();
-// APIFetch.create(config);
-
-// export { APIFetch };

@@ -1,29 +1,43 @@
 <script setup lang="ts">
-import { APIFetchFactory } from "~/app/shared/http/fetchFactory";
+import {
+  FetchService,
+  AxiosCreator,
+} from "~/app/shared/http/instances/axiosInstance";
+
+// const { getAllprojects } = useProjectStore();
+
+// const { data, status } = await getAllprojects();
+
+// .createInstance(
+//   `https://jsonplaceholder.typicode.com/`,
+// );
+
+const postService = new FetchService(
+  new AxiosCreator(),
+  `https://jsonplaceholder.typicode.com/`,
+);
 
 async function fetchData(): Promise<any> {
-  const factory = new APIFetchFactory();
-
-  const config = {
-    baseURL: "https://jsonplaceholder.typicode.com/posts",
-  };
-
   try {
-    const { data, refresh, pending, status } = await useAsyncData(() =>
-      factory.create(config),
-    );
-    return { data, refresh, pending, status };
-  } catch (error: unknown) {
-    console.error("Error fetching user data:", error);
+    const response = await postService.get<any, any>({
+      url: `/posts`,
+      config: {
+        method: "get",
+      },
+    });
+    return await JSON.stringify(response);
+  } catch (error) {
+    console.error("Error:", error);
   }
 }
 
-const { data, refresh, pending, status } = await fetchData();
+const postResponse = await fetchData();
 </script>
 
 <template>
-  <div>
-    test page
-    {{ data }}
+  <div class="flex flex-col gap-8 text-white">
+    <!-- <p>{{ status }}</p>
+    <p>{{ data }}</p> -->
+    <p>{{ postResponse }}</p>
   </div>
 </template>
