@@ -1,5 +1,8 @@
 <template>
-  <div>Команда</div>
+  <div>
+    <BlocksFeatures />
+    <BlocksDevelopmentSteps />
+  </div>
 </template>
 
 <script lang="ts" setup></script>

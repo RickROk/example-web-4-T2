@@ -2,9 +2,9 @@
 
 <template>
   <div class="">
-    <BlocksTitle />
+    <BlocksWelcome class="xl:mt-20 h-screen" />
+    <!-- <BlocksTitle /> -->
     <BlocksTeamGrid />
     <BlocksDescription />
-    <BlocksPrice />
   </div>
 </template>

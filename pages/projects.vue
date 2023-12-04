@@ -1,5 +1,8 @@
 <template>
-  <div>Projects</div>
+  <div>
+    <BlocksProjectsInteractive />
+    <BlocksPrice />
+  </div>
 </template>
 
 <script lang="ts" setup></script>

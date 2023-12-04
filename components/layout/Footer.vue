@@ -1,5 +1,10 @@
 <script setup>
-const navs = ref(["Главная", "Проекты", "Команда", "Контакты"]);
+const navs = ref([
+  { link: "/", title: "Главная" },
+  { link: "/projects", title: "Проекты" },
+  { link: "/team", title: "Команда" },
+  { link: "/contacts", title: "Контакты" },
+]);
 </script>
 
 <template>
@@ -20,8 +25,8 @@ const navs = ref(["Главная", "Проекты", "Команда", "Кон�
           class="flex flex-wrap justify-center items-center text-gray-900 dark:text-white"
         >
           <li v-for="(item, index) in navs" :key="index">
-            <NuxtLink to="/" class="mr-4 hover:underline md:mr-6">
-              {{ item }}
+            <NuxtLink :to="item.link" class="mr-4 hover:underline md:mr-6">
+              {{ item.title }}
             </NuxtLink>
           </li>
         </ul>

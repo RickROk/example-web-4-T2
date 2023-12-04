@@ -1,5 +1,8 @@
 <template>
-  <div>Контакты</div>
+  <div>
+    <BlocksContactsMap />
+    <BlocksContactForm />
+  </div>
 </template>
 
 <script lang="ts" setup></script>
