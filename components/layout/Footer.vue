@@ -1,5 +1,5 @@
 <script setup>
-const navs = ref(["О нас", "Рекомендации", "Контакты", "FAQs"]);
+const navs = ref(["Главная", "Проекты", "Команда", "Контакты"]);
 </script>
 
 <template>

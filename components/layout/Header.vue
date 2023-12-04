@@ -5,9 +5,9 @@ const setColorTheme = (newTheme: Theme) => {
 
 const navs = ref([
   { link: "/", title: "Главная" },
-  { link: "/", title: "О компании" },
-  { link: "/", title: "Команда" },
-  { link: "/", title: "Контакты" },
+  { link: "/projects", title: "Проекты" },
+  { link: "/team", title: "Команда" },
+  { link: "/contacts", title: "Контакты" },
 ]);
 </script>
 
