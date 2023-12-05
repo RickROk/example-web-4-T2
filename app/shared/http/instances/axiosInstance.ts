@@ -1,70 +1,70 @@
-import axios from "axios";
-import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
-import { err, Err, Result } from "neverthrow";
-import { ParseError } from "../../error/ParseError";
-import { HttpError } from "../HttpError";
+import axios from 'axios'
+import type { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios'
+import { err, Err, Result } from 'neverthrow'
+import { ParseError } from '../../error/ParseError'
+import { HttpError } from '../HttpError'
 import type {
   FailableParser,
   IHttpRequest,
-  Parser,
-} from "../fetchFactory.types";
+  Parser
+} from '../fetchFactory.types'
 import type {
   IhttpCreator,
-  IFetchFactory,
-} from "~/app/shared/http/fetchFactory";
+  IFetchFactory
+} from '~/app/shared/http/fetchFactory'
 
 export class AxiosCreator implements IhttpCreator {
-  createInstance(baseUrl: string, headers?: any): AxiosInstance {
+  createInstance (baseUrl: string, headers?: any): AxiosInstance {
     return axios.create({
       // baseURL: baseUrl,
       baseURL: baseUrl,
       timeout: 10000,
       headers: {
-        "Content-Type": "application/json",
-        ...(headers || {}),
-      },
-    });
+        'Content-Type': 'application/json',
+        ...(headers || {})
+      }
+    })
   }
 }
 
 export class AxiosService implements IFetchFactory {
   // private axiosInstance: AxiosInstance;
-  private axiosService: AxiosInstance;
-  private axiosCreator: AxiosCreator;
+  private axiosService: AxiosInstance
+  private axiosCreator: AxiosCreator
 
-  constructor(axiosCreator: AxiosCreator, url: string) {
-    this.axiosCreator = axiosCreator;
+  constructor (axiosCreator: AxiosCreator, url: string) {
+    this.axiosCreator = axiosCreator
     // this.axiosService = axios.create()
-    this.axiosService = axiosCreator.createInstance(url);
+    this.axiosService = axiosCreator.createInstance(url)
   }
 
-  initService(baseUrl: string) {
-    this.axiosService = this.axiosCreator.createInstance(baseUrl);
-    return this;
+  initService (baseUrl: string) {
+    this.axiosService = this.axiosCreator.createInstance(baseUrl)
+    return this
   }
 
-  interceptors() {
+  interceptors () {
     axios.interceptors.request.use(
       function (config) {
         // before request is sent
-        return config;
+        return config
       },
       function (error) {
         // with request error
-        return Promise.reject(error);
-      },
-    );
+        return Promise.reject(error)
+      }
+    )
 
     axios.interceptors.response.use(
       function (response) {
         // response data
-        return response;
+        return response
       },
       function (error) {
         // response error
-        return Promise.reject(error);
-      },
-    );
+        return Promise.reject(error)
+      }
+    )
   }
 
   // async get<R>(url: string, config?: FetchConfig): Promise<R> {
@@ -75,29 +75,29 @@ export class AxiosService implements IFetchFactory {
   //   return await this.axiosInstance.post<R>(url, data, config);
   // }
 
-  private _parseFailable<T, M>(
+  private _parseFailable<T, M> (
     data: T,
-    parser: FailableParser<T, M>,
+    parser: FailableParser<T, M>
   ): Result<M, ParseError> {
     try {
-      return parser(data);
+      return parser(data)
     } catch (error: any) {
-      const parseError = new ParseError(error.message);
-      return err(parseError);
+      const parseError = new ParseError(error.message)
+      return err(parseError)
     }
   }
 
-  public async get<T, M>(
+  public async get<T, M> (
     { url, config }: IHttpRequest,
-    parser: Parser<T, M>,
+    parser: Parser<T, M>
   ): Promise<Result<M, ParseError | HttpError>> {
     try {
-      const response = await this.axiosService.get<T>(url, config);
+      const response = await this.axiosService.get<T>(url, config)
       // return response as any;
       // this._parseFailable<T, M>(response.data, parser.parseTo);
-      return this._parseFailable<T, M>(response.data, parser.parseTo);
+      return this._parseFailable<T, M>(response.data, parser.parseTo)
     } catch (error: any) {
-      return err(error);
+      return err(error)
     }
   }
 }

@@ -1,1 +1,1 @@
-export * from "./teammember.types";
+export * from './teammember.types'

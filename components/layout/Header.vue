@@ -1,14 +1,14 @@
 <script setup lang="ts">
 const setColorTheme = (newTheme: Theme) => {
-  useColorMode().preference = newTheme;
-};
+  useColorMode().preference = newTheme
+}
 
 const navs = ref([
-  { link: "/", title: "Главная" },
-  { link: "/projects", title: "Проекты" },
-  { link: "/team", title: "Команда" },
-  { link: "/contacts", title: "Контакты" },
-]);
+  { link: '/', title: 'Главная' },
+  { link: '/projects', title: 'Проекты' },
+  { link: '/team', title: 'Команда' },
+  { link: '/contacts', title: 'Контакты' }
+])
 </script>
 
 <template>
@@ -59,7 +59,7 @@ const navs = ref([
               $colorMode.value === `dark` ? `/svgs/moon.svg` : `/svgs/sun.svg`
             "
             class="p-2"
-          />
+          >
         </button>
       </div>
     </div>

@@ -2,7 +2,7 @@
 export interface Props {
   teamMember: any;
 }
-const props = withDefaults(defineProps<Props>(), {});
+const props = withDefaults(defineProps<Props>(), {})
 </script>
 
 <template>
@@ -18,7 +18,7 @@ const props = withDefaults(defineProps<Props>(), {});
               class="mb-4 w-16 h-16 rounded-full sm:w-20 sm:h-20"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/helene-engels.png"
               alt="Helene avatar"
-            />
+            >
             <div>
               <h2
                 class="flex items-center mb-2 text-xl font-bold leading-none text-gray-900 sm:text-2xl dark:text-white"
@@ -35,12 +35,12 @@ const props = withDefaults(defineProps<Props>(), {});
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
                   <path
                     fill-rule="evenodd"
                     d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
                     clip-rule="evenodd"
-                  ></path>
+                  />
                 </svg>
                 Moderator
               </span>
@@ -88,7 +88,7 @@ const props = withDefaults(defineProps<Props>(), {});
                 class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 TG
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div class="tooltip-arrow" data-popper-arrow />
               </div>
               <a
                 href="#"
@@ -115,7 +115,7 @@ const props = withDefaults(defineProps<Props>(), {});
                 class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 VK
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div class="tooltip-arrow" data-popper-arrow />
               </div>
               <a
                 href="#"
@@ -142,7 +142,7 @@ const props = withDefaults(defineProps<Props>(), {});
                 class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 GitHub profile
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div class="tooltip-arrow" data-popper-arrow />
               </div>
               <a
                 href="https://github.com/RickROk/example-web-4-T2.git"
@@ -169,7 +169,7 @@ const props = withDefaults(defineProps<Props>(), {});
                 class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
               >
                 Dribbble profile
-                <div class="tooltip-arrow" data-popper-arrow></div>
+                <div class="tooltip-arrow" data-popper-arrow />
               </div>
             </dd>
             <dt
@@ -191,11 +191,9 @@ const props = withDefaults(defineProps<Props>(), {});
                   fill-rule="evenodd"
                   d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
                   clip-rule="evenodd"
-                ></path>
+                />
               </svg>
-              <span class="font-light text-gray-500 dark:text-gray-400"
-                >Россия, Москва</span
-              >
+              <span class="font-light text-gray-500 dark:text-gray-400">Россия, Москва</span>
             </dd>
             <dt
               class="mb-2 font-semibold leading-none text-gray-900 dark:text-white"
@@ -214,14 +212,12 @@ const props = withDefaults(defineProps<Props>(), {});
                   fill-rule="evenodd"
                   d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z"
                   clip-rule="evenodd"
-                ></path>
+                />
                 <path
                   d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"
-                ></path>
+                />
               </svg>
-              <span class="font-light text-gray-500 dark:text-gray-400"
-                >Web Developer</span
-              >
+              <span class="font-light text-gray-500 dark:text-gray-400">Web Developer</span>
             </dd>
           </dl>
         </div>
@@ -288,7 +284,7 @@ const props = withDefaults(defineProps<Props>(), {});
               class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
             >
               inDesign
-              <div class="tooltip-arrow" data-popper-arrow></div>
+              <div class="tooltip-arrow" data-popper-arrow />
             </div>
             <button
               type="button"
@@ -347,7 +343,7 @@ const props = withDefaults(defineProps<Props>(), {});
               class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
             >
               Sketch
-              <div class="tooltip-arrow" data-popper-arrow></div>
+              <div class="tooltip-arrow" data-popper-arrow />
             </div>
             <button
               type="button"
@@ -390,7 +386,7 @@ const props = withDefaults(defineProps<Props>(), {});
               class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
             >
               Figma
-              <div class="tooltip-arrow" data-popper-arrow></div>
+              <div class="tooltip-arrow" data-popper-arrow />
             </div>
             <button
               type="button"
@@ -439,7 +435,7 @@ const props = withDefaults(defineProps<Props>(), {});
               class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
             >
               HTML
-              <div class="tooltip-arrow" data-popper-arrow></div>
+              <div class="tooltip-arrow" data-popper-arrow />
             </div>
             <button
               type="button"
@@ -472,7 +468,7 @@ const props = withDefaults(defineProps<Props>(), {});
               class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700"
             >
               Adobe XD
-              <div class="tooltip-arrow" data-popper-arrow></div>
+              <div class="tooltip-arrow" data-popper-arrow />
             </div>
           </dd>
           <dt
@@ -481,10 +477,10 @@ const props = withDefaults(defineProps<Props>(), {});
             Языки
           </dt>
           <dd class="font-light text-gray-500 dark:text-gray-400">
-            English(sometimes), Русский 
+            English(sometimes), Русский
           </dd>
         </dl>
-      </div>      
+      </div>
     </div>
   </section>
 </template>

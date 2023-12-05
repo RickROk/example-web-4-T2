@@ -6,7 +6,7 @@
           <h2
             class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white"
           >
-          У нас есть план и мы его придерживаемся!
+            У нас есть план и мы его придерживаемся!
           </h2>
         </div>
 
@@ -21,7 +21,10 @@
                 08:00 - 09:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline">Будим тех, кто не успел проснуться</a>
+                <a
+                  href="#"
+                  class="hover:underline"
+                >Будим тех, кто не успел проснуться</a>
               </h3>
             </div>
 
@@ -34,9 +37,10 @@
                 09:00 - 10:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >Занимаем очередь за утренним кофе</a
-                >
+                <a
+                  href="#"
+                  class="hover:underline"
+                >Занимаем очередь за утренним кофе</a>
               </h3>
             </div>
 
@@ -49,9 +53,7 @@
                 10:00 - 11:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >Перекур</a
-                >
+                <a href="#" class="hover:underline">Перекур</a>
               </h3>
             </div>
 
@@ -77,9 +79,7 @@
                 12:00 - 13:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >Прекур</a
-                >
+                <a href="#" class="hover:underline">Прекур</a>
               </h3>
             </div>
 
@@ -92,9 +92,10 @@
                 13:00 - 14:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >Осуждаем последние новости</a
-                >
+                <a
+                  href="#"
+                  class="hover:underline"
+                >Осуждаем последние новости</a>
               </h3>
             </div>
 
@@ -107,9 +108,7 @@
                 14:00 - 15:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >Перекур</a
-                >
+                <a href="#" class="hover:underline">Перекур</a>
               </h3>
             </div>
 
@@ -122,9 +121,7 @@
                 15:00 - 16:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >После обеденный ланч</a
-                >
+                <a href="#" class="hover:underline">После обеденный ланч</a>
               </h3>
             </div>
 
@@ -137,9 +134,10 @@
                 16:00 - 14:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline"
-                  >Проверяем новостный ленты, соц сети</a
-                >
+                <a
+                  href="#"
+                  class="hover:underline"
+                >Проверяем новостный ленты, соц сети</a>
               </h3>
             </div>
 
@@ -152,7 +150,10 @@
                 17:00 - 14:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline">Бронируем каршеринг, кто не успел тот на метро)</a>
+                <a
+                  href="#"
+                  class="hover:underline"
+                >Бронируем каршеринг, кто не успел тот на метро)</a>
               </h3>
             </div>
           </div>

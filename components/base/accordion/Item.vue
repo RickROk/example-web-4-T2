@@ -3,9 +3,9 @@
 
 defineProps<{
   accordionItem: any;
-}>();
+}>()
 
-const { isOpen, toggle } = useSwitch();
+const { isOpen, toggle } = useSwitch()
 </script>
 
 <template>

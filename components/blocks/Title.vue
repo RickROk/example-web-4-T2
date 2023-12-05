@@ -4,7 +4,7 @@
   >
     <h2 class="mb-4 text-4xl tracking-tight font-extrabold">
       <!-- text-gray-900 dark:text-white -->
-     Команда
+      Команда
     </h2>
     <p class="font-light sm:text-xl">
       <!-- text-gray-500 dark:text-gray-400 -->

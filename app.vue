@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const title = ref("TechnoProg");
-const description = ref("технологии программирования, команда 2");
+const title = ref('TechnoProg')
+const description = ref('технологии программирования, команда 2')
 </script>
 
 <template>

@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 const clickAndRef = (element: string | null): void => {
-  const el: HTMLElement | null = document.querySelector(`#${element}`);
-  useScrollToElement(el);
-};
+  const el: HTMLElement | null = document.querySelector(`#${element}`)
+  useScrollToElement(el)
+}
 </script>
 
 <template>
@@ -35,7 +35,7 @@ const clickAndRef = (element: string | null): void => {
           <img
             src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
             alt="mockup"
-          />
+          >
         </div>
       </div>
 
@@ -43,7 +43,7 @@ const clickAndRef = (element: string | null): void => {
         class="absolute left-1/2 top-full flex justify-center items-center w-12 h-12 animate-bounce bg-gray-200 dark:bg-gray-300 rounded-full cursor-pointer"
         @click="clickAndRef('teamgrid')"
       >
-        <img src="/svgs/arrow-down.svg" alt="" class="w-6 h-6" />
+        <img src="/svgs/arrow-down.svg" alt="" class="w-6 h-6">
       </div>
     </section>
   </div>

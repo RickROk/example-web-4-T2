@@ -1,3 +1,3 @@
-export * from "./theme.types";
-export * from "./accordion.types";
-export * from "./modal.types";
+export * from './theme.types'
+export * from './accordion.types'
+export * from './modal.types'

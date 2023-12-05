@@ -1,99 +1,99 @@
 <script setup lang="ts">
 // import { ModalPosition, ModalSize, ModalPaddingType } from "@/types";
-import type { ModalPosition, ModalSize, ModalPaddingType } from "@/types";
+import type { ModalPosition, ModalSize, ModalPaddingType } from '@/types'
 
 const props = defineProps({
   // showModal: Boolean,
   position: {
     type: String as PropType<ModalPosition>,
-    default: "center",
+    default: 'center'
   },
   size: {
     type: String as PropType<ModalSize>,
-    default: "2xl",
+    default: '2xl'
   },
   outsideClickClose: {
     type: Boolean,
-    default: false,
+    default: false
   },
   background: {
     type: Boolean,
-    default: true,
+    default: true
   },
   closable: {
     type: Boolean,
-    default: true,
+    default: true
   },
   fullscreen: {
     type: Boolean,
-    default: false,
+    default: false
   },
   sectionBorders: {
     type: Boolean,
-    default: false,
+    default: false
   },
   hasPadding: {
     type: Boolean,
-    default: true,
+    default: true
   },
   paddingType: {
     type: String as PropType<ModalPaddingType>,
-    default: "form",
-  },
-});
+    default: 'form'
+  }
+})
 
 const paddingStyle = computed(() => {
-  return props.paddingType === "standart" ? `pt-4` : `pt-8`;
-});
+  return props.paddingType === 'standart' ? 'pt-4' : 'pt-8'
+})
 
 const headerPadding = computed(() => {
-  return props.hasPadding === true ? `px-8 pb-4` : `p-0`;
-});
+  return props.hasPadding === true ? 'px-8 pb-4' : 'p-0'
+})
 const bodyPadding = computed(() => {
-  return props.hasPadding === true ? `px-8` : `p-0`;
-});
+  return props.hasPadding === true ? 'px-8' : 'p-0'
+})
 const footerPadding = computed(() => {
-  return props.hasPadding === true ? `px-8 pb-8 pt-6` : `p-0`;
-});
+  return props.hasPadding === true ? 'px-8 pb-8 pt-6' : 'p-0'
+})
 
 const modalSizeClasses = {
-  xs: "max-w-xs",
-  sm: "max-w-sm",
-  md: "max-w-md",
-  lg: "max-w-lg",
-  xl: "max-w-xl",
-  "2xl": "max-w-2xl",
-  "3xl": "max-w-3xl",
-  "4xl": "max-w-4xl",
-  "5xl": "max-w-5xl",
-  "6xl": "max-w-6xl",
-  "7xl": "max-w-7xl",
-};
+  xs: 'max-w-xs',
+  sm: 'max-w-sm',
+  md: 'max-w-md',
+  lg: 'max-w-lg',
+  xl: 'max-w-xl',
+  '2xl': 'max-w-2xl',
+  '3xl': 'max-w-3xl',
+  '4xl': 'max-w-4xl',
+  '5xl': 'max-w-5xl',
+  '6xl': 'max-w-6xl',
+  '7xl': 'max-w-7xl'
+}
 
 const modalPositionClasses = {
-  "top-left": "inset-0 justify-start items-start",
-  "top-center": "inset-0 justify-center items-start",
-  "top-right": "inset-0 justify-end items-start",
-  "center-left": "inset-0 justify-start items-center",
-  center: "inset-0 justify-center items-center",
-  "center-right": "inset-0 justify-end items-center",
-  "bottom-left": "inset-0 justify-start items-end",
-  "bottom-center": "inset-0 justify-center items-end",
-  "bottom-right": "inset-0 justify-end items-end",
-};
+  'top-left': 'inset-0 justify-start items-start',
+  'top-center': 'inset-0 justify-center items-start',
+  'top-right': 'inset-0 justify-end items-start',
+  'center-left': 'inset-0 justify-start items-center',
+  center: 'inset-0 justify-center items-center',
+  'center-right': 'inset-0 justify-end items-center',
+  'bottom-left': 'inset-0 justify-start items-end',
+  'bottom-center': 'inset-0 justify-center items-end',
+  'bottom-right': 'inset-0 justify-end items-end'
+}
 
-const emit = defineEmits(["close"]);
+const emit = defineEmits(['close'])
 
 onMounted(() => {
-  document.body.style.overflow = "hidden";
-});
+  document.body.style.overflow = 'hidden'
+})
 
 onUnmounted(() => {
-  document.body.style.overflow = "scroll";
-});
+  document.body.style.overflow = 'scroll'
+})
 
-function closeModal() {
-  emit("close", false);
+function closeModal () {
+  emit('close', false)
 }
 </script>
 
@@ -123,7 +123,7 @@ function closeModal() {
             @click="closeModal"
           >
             <slot name="close-icon">
-              <img src="/svgs/close-button.svg" alt="Close" />
+              <img src="/svgs/close-button.svg" alt="Close">
             </slot>
           </button>
           <div

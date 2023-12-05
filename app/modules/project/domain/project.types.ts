@@ -9,29 +9,29 @@ export interface IProject extends IProjectData {
 }
 
 export class Project implements IProject {
-  private _id?: string | number;
-  private _description?: string;
-  private _userId?: string;
+  private _id?: string | number
+  private _description?: string
+  private _userId?: string
 
-  constructor(data: IProjectData) {
-    this._id = data.id;
-    this._description = data.description;
-    this._userId = data.userId;
+  constructor (data: IProjectData) {
+    this._id = data.id
+    this._description = data.description
+    this._userId = data.userId
   }
 
-  get id() {
-    return this._id;
+  get id () {
+    return this._id
   }
 
-  get description() {
-    return this._description;
+  get description () {
+    return this._description
   }
 
-  get userId() {
-    return this._userId;
+  get userId () {
+    return this._userId
   }
 
-  getInfo(): void {
-    throw new Error("Method not implemented.");
+  getInfo (): void {
+    throw new Error('Method not implemented.')
   }
 }

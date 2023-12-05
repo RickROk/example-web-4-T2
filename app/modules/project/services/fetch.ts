@@ -1,12 +1,12 @@
 import {
   AxiosService,
-  AxiosCreator,
-} from "~/app/shared/http/instances/axiosInstance";
+  AxiosCreator
+} from '~/app/shared/http/instances/axiosInstance'
 
-const axiosService = new AxiosCreator();
+const axiosService = new AxiosCreator()
 
-const projectAPI = new AxiosService(axiosService, ``).initService(
-  `https://jsonplaceholder.typicode.com/`,
-);
+const projectAPI = new AxiosService(axiosService, '').initService(
+  'https://jsonplaceholder.typicode.com/'
+)
 
-export { projectAPI };
+export { projectAPI }

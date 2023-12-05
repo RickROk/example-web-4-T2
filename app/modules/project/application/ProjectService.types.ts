@@ -1,9 +1,9 @@
-import { Result } from "neverthrow";
-import type { IProject, IProjectData } from "../domain";
-import { ParseError } from "~/app/shared/error/ParseError";
-import type { IRepository } from "~/app/modules/common";
-import { HttpError } from "~/app/shared/http/HttpError";
-import { AxiosService } from "~/app/shared/http/instances/";
+import { Result } from 'neverthrow'
+import type { IProject, IProjectData } from '../domain'
+import { ParseError } from '~/app/shared/error/ParseError'
+import type { IRepository } from '~/app/modules/common'
+import { HttpError } from '~/app/shared/http/HttpError'
+import { AxiosService } from '~/app/shared/http/instances/'
 
 export type HttpProject = {
   id?: string;

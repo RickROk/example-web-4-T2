@@ -1,22 +1,22 @@
 export const useSwitch = (defaultValue = false) => {
-  const isOpen = ref<boolean>(defaultValue);
+  const isOpen = ref<boolean>(defaultValue)
 
   const open = (): void => {
-    isOpen.value = true;
-  };
+    isOpen.value = true
+  }
 
   const close = (): void => {
-    isOpen.value = false;
-  };
+    isOpen.value = false
+  }
 
   const toggle = (): void => {
-    isOpen.value = !isOpen.value;
-  };
+    isOpen.value = !isOpen.value
+  }
 
   return {
     isOpen,
     open,
     close,
-    toggle,
-  };
-};
+    toggle
+  }
+}

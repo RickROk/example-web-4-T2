@@ -24,42 +24,42 @@
           <div
             class="p-4 text-teal-600 bg-teal-100 rounded-lg dark:bg-teal-900 dark:text-teal-300"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">600+</h2>
-            <span class="text-teal-500 dark:text-teal-400"
-              >Активных пользователей в месяц</span
-            >
+            <h2 class="text-3xl font-extrabold leading-tight">
+              600+
+            </h2>
+            <span class="text-teal-500 dark:text-teal-400">Активных пользователей в месяц</span>
           </div>
           <div
             class="p-4 text-indigo-700 bg-indigo-100 rounded-lg dark:bg-indigo-900 dark:text-indigo-300"
           >
-            <h2 class="text-3xl font-extrabold leading-tight"> >2 million </h2>
-            <span class="text-indigo-500 dark:text-indigo-400"
-              >Готовых решений</span
-            >
+            <h2 class="text-3xl font-extrabold leading-tight">
+              >2 million
+            </h2>
+            <span class="text-indigo-500 dark:text-indigo-400">Готовых решений</span>
           </div>
           <div
             class="p-4 text-purple-700 bg-purple-100 rounded-lg dark:bg-purple-900 dark:text-purple-300"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">90 million</h2>
-            <span class="text-purple-500 dark:text-purple-400"
-              >пользователей на сайте за прошедший год</span
-            >
+            <h2 class="text-3xl font-extrabold leading-tight">
+              90 million
+            </h2>
+            <span class="text-purple-500 dark:text-purple-400">пользователей на сайте за прошедший год</span>
           </div>
           <div
             class="p-4 text-green-600 bg-green-100 rounded-lg dark:text-green-300 dark:bg-green-900"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">99,9%</h2>
-            <span class="text-green-500 dark:text-green-400"
-              >Довольных клиентов</span
-            >
+            <h2 class="text-3xl font-extrabold leading-tight">
+              99,9%
+            </h2>
+            <span class="text-green-500 dark:text-green-400">Довольных клиентов</span>
           </div>
           <div
             class="p-4 text-gray-600 bg-gray-100 rounded-lg dark:text-gray-300 dark:bg-gray-700"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">100%</h2>
-            <span class="text-gray-500 dark:text-gray-400" 
-              >boost Вашего бренда</span
-            >
+            <h2 class="text-3xl font-extrabold leading-tight">
+              100%
+            </h2>
+            <span class="text-gray-500 dark:text-gray-400">boost Вашего бренда</span>
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
 <script setup>
 const props = defineProps({
-  error: Object,
-});
-const handleError = () => clearError({ redirect: "/" });
-const handleReload = () => window.location.reload(true);
+  error: Object
+})
+const handleError = () => clearError({ redirect: '/' })
+const handleReload = () => window.location.reload(true)
 </script>
 
 <template>

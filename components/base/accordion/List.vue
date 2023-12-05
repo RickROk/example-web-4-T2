@@ -9,9 +9,9 @@
 </template>
 
 <script setup lang="ts">
-import { IAccordion } from "~/types/accordion.types";
+import { IAccordion } from '~/types/accordion.types'
 
 defineProps<{
   navs: IAccordion[];
-}>();
+}>()
 </script>

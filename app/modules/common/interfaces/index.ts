@@ -1,3 +1,3 @@
-export * from "./IFilterable";
-export * from "./IComporable";
-export * from "./IRepository";
+export * from './IFilterable'
+export * from './IComporable'
+export * from './IRepository'
