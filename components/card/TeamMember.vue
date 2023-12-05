@@ -73,7 +73,7 @@ const openModal = () => {
             <svg
               class="w-6 h-5"
               fill="currentColor"
-              viewBox="0 0 24 30"
+              viewBox="0 5 24 30"
               aria-hidden="true"
             >
               <path
@@ -90,9 +90,9 @@ const openModal = () => {
             class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
-              class="w-5 h-7"
+              class="w-6 h-9"
               fill="currentColor"
-              viewBox="0 0 30 45"
+              viewBox="5 5 25 50"
               aria-hidden="true"
             >
               <path
