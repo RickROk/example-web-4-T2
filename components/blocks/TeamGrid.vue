@@ -70,8 +70,6 @@ const checkedTeamMember = ref();
       </div>
     </div>
 
-    <button class="text-white" @click="toggle">click</button>
-
     <OverlayModal
       v-if="isOpen"
       size="5xl"
@@ -81,9 +79,9 @@ const checkedTeamMember = ref();
       closable
       @close="(modalStatus) => (isOpen = modalStatus)"
     >
-      <template #header>
-        <div class="flex items-center text-2xl font-bold">Найди нас</div>
-      </template>
+      <!-- <template #header>
+        <div class="flex items-center text-2xl font-bold">Лаалалла</div>
+      </template> -->
       <template #body>
         <!-- {{ checkedTeamMember }} -->
         <CardTeamMemberDetail :team-member="checkedTeamMember" />

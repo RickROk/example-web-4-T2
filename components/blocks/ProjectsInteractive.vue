@@ -7,12 +7,12 @@
         <div class="grid grid-cols-2 gap-2">
           <a
             href="#"
-            class="p-8 col-span-2 text-left h-96 bg-[url('https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/bmw-ix.png')] bg-no-repeat bg-cover bg-center bg-gray-500 bg-blend-multiply hover:bg-blend-normal"
+            class="p-8 col-span-2 text-left h-96 bg-[url('https://www.techpowerup.com/img/qR3f1cyzQDNmdfSD.jpg')] bg-no-repeat bg-cover bg-center bg-gray-500 bg-blend-multiply hover:bg-blend-normal"
           >
             <h2
               class="mb-5 max-w-xl text-5xl font-extrabold tracking-tight leading-tight text-white"
             >
-              Enjoy nature sustainable travel in the BMW iX
+              Он одобряет
             </h2>
             <button
               type="button"

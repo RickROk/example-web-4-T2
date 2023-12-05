@@ -1,6 +1,7 @@
 <template>
   <div>
-    <BlocksProjectsInteractive />
+    <!-- <BlocksProjectsInteractive /> -->
+    <BlocksProjectsGrid />
     <BlocksPrice />
   </div>
 </template>
