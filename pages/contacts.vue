@@ -1,7 +1,6 @@
 <template>
   <div>
     <BlocksContactsMap />
-    <BlocksContactForm />
   </div>
 </template>
 

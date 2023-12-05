@@ -9,7 +9,7 @@ const team = ref([
       "Повелитель собственной лени, фантазер и начинающий веб разработчик",
     imgPath:
       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png",
-    socials: [{ link: "", img: "" }],
+    socials: [{ link: "https://t.me/Simonov_Vladimir", img: "/svgs/vk.svg" }],
   },
   {
     name: "Евдокимов Даниил",
