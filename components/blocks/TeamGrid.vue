@@ -81,7 +81,7 @@ const checkedTeamMember = ref();
       @close="(modalStatus) => (isOpen = modalStatus)"
     >
       <template #header>
-        <div class="flex items-center text-2xl font-bold">Лаалалла</div>
+        <div class="flex items-center text-2xl font-bold">Найди нас</div>
       </template>
       <template #body>
         <!-- {{ checkedTeamMember }} -->
