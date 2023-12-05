@@ -26,15 +26,15 @@
           >
             <h2 class="text-3xl font-extrabold leading-tight">600+</h2>
             <span class="text-teal-500 dark:text-teal-400"
-              >Пользователей в месяц</span
+              >Активных пользователей в месяц</span
             >
           </div>
           <div
             class="p-4 text-indigo-700 bg-indigo-100 rounded-lg dark:bg-indigo-900 dark:text-indigo-300"
           >
-            <h2 class="text-3xl font-extrabold leading-tight"> > 2 million </h2>
+            <h2 class="text-3xl font-extrabold leading-tight"> >2 million </h2>
             <span class="text-indigo-500 dark:text-indigo-400"
-              >Готовых проектов</span
+              >Готовых решений</span
             >
           </div>
           <div
@@ -48,7 +48,7 @@
           <div
             class="p-4 text-green-600 bg-green-100 rounded-lg dark:text-green-300 dark:bg-green-900"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">99%</h2>
+            <h2 class="text-3xl font-extrabold leading-tight">99,9%</h2>
             <span class="text-green-500 dark:text-green-400"
               >Довольных клиентов</span
             >
@@ -58,7 +58,7 @@
           >
             <h2 class="text-3xl font-extrabold leading-tight">100%</h2>
             <span class="text-gray-500 dark:text-gray-400" 
-              >продвижение Вашего бренда</span
+              >boost Вашего бренда</span
             >
           </div>
         </div>

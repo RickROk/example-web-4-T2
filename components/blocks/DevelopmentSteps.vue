@@ -6,7 +6,7 @@
           <h2
             class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white"
           >
-          План действий на сегодня!
+          У нас есть план и мы его придерживаемся!
           </h2>
 
           <div class="mt-4">
@@ -15,7 +15,7 @@
               title=""
               class="inline-flex items-center text-lg font-medium text-primary-600 hover:underline dark:text-primary-500"
             >
-              Статистика в картинках
+              Статистика на карточках
               <svg
                 aria-hidden="true"
                 class="w-5 h-5 ml-2"
