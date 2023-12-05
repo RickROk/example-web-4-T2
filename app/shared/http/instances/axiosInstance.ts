@@ -27,7 +27,7 @@ export class AxiosCreator implements IhttpCreator {
   }
 }
 
-export class FetchService implements IFetchFactory {
+export class AxiosService implements IFetchFactory {
   // private axiosInstance: AxiosInstance;
   private axiosService: AxiosInstance;
   private axiosCreator: AxiosCreator;
@@ -89,12 +89,13 @@ export class FetchService implements IFetchFactory {
 
   public async get<T, M>(
     { url, config }: IHttpRequest,
-    parser?: Parser<T, M>,
+    parser: Parser<T, M>,
   ): Promise<Result<M, ParseError | HttpError>> {
     try {
       const response = await this.axiosService.get<T>(url, config);
-      return response as any;
+      // return response as any;
       // this._parseFailable<T, M>(response.data, parser.parseTo);
+      return this._parseFailable<T, M>(response.data, parser.parseTo);
     } catch (error: any) {
       return err(error);
     }

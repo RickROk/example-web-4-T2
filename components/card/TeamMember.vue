@@ -1,5 +1,6 @@
 <script setup lang="ts">
 export interface Props {
+  modalStatus: boolean;
   name: string;
   role: string;
   description: string;
@@ -8,14 +9,23 @@ export interface Props {
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  modalStatus: false,
   name: "",
   role: "",
   description: "",
   imgPath:
     "https://png.pngtree.com/thumb_back/fh260/background/20210207/pngtree-gray-simple-gradient-background-image_557031.jpg",
 });
+
+const modalStatusRef = ref(props.modalStatus);
+
+const emit = defineEmits(["modalStatus"]);
+
 const openModal = () => {
+  // modalStatusRef.value = !modalStatusRef.value;
   console.log("modal opened");
+  // emit("modalStatus", modalStatusRef.value);
+  emit("modalStatus", true);
 };
 </script>
 
@@ -50,7 +60,7 @@ const openModal = () => {
           <span
             class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0"
           >
-            Purple to blue
+            Подробнее
           </span>
         </button>
       </div>

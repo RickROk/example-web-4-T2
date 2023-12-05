@@ -1,4 +1,6 @@
 <script setup>
+const { isOpen, toggle } = useSwitch();
+
 const team = ref([
   {
     name: "Владимир Симонов",
@@ -45,7 +47,10 @@ const team = ref([
     socials: [{ link: "", img: "" }],
   },
 ]);
+
+const checkedTeamMember = ref();
 </script>
+
 <template>
   <section class="">
     <!-- bg-white dark:bg-gray-900 -->
@@ -58,8 +63,30 @@ const team = ref([
           :role="item.role"
           :description="item.description"
           :img-path="item.imgPath"
+          @click="checkedTeamMember = item"
+          @modal-status="(res) => (isOpen = res)"
         />
       </div>
     </div>
+
+    <button class="text-white" @click="toggle">click</button>
+
+    <OverlayModal
+      v-if="isOpen"
+      size="5xl"
+      position="center"
+      :background="true"
+      outside-click-close
+      closable
+      @close="(modalStatus) => (isOpen = modalStatus)"
+    >
+      <template #header>
+        <div class="flex items-center text-2xl font-bold">Лаалалла</div>
+      </template>
+      <template #body>
+        <!-- {{ checkedTeamMember }} -->
+        <CardTeamMemberDetail :team-member="checkedTeamMember" />
+      </template>
+    </OverlayModal>
   </section>
 </template>
