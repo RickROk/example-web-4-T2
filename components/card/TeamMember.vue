@@ -54,7 +54,7 @@ const openModal = () => {
       </p>
       <div class="py-2">
         <button
-          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden border border-gray-500 text-sm font-medium text-gray-900 rounded-lg group group-hover:from-purple-600 group-hover:to-blue-500 hover:bg-gray-100 dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
+          class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden border border-gray-500 text-sm font-medium text-gray-900 rounded-lg group group-hover:from-purple-600 group-hover:to-blue-500 hover:bg-gray-100 dark:hover:text-inherit dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
           @click="openModal"
         >
           <span
