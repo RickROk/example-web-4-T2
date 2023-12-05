@@ -4,7 +4,7 @@
   <div class="">
     <BlocksWelcome class="xl:mt-20 h-screen" />
     <!-- <BlocksTitle /> -->
-    <BlocksTeamGrid />
+    <BlocksTeamGrid id="teamgrid" />
     <BlocksDescription />
   </div>
 </template>

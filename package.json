@@ -42,7 +42,7 @@
     "@pinia/nuxt": "^0.5.1",
     "@types/axios": "^0.14.0",
     "axios": "^1.6.2",
-    "neverthrow": "^6.1.0",
+    "neverthrow": "^4.0.1",
     "pinia": "^2.1.7"
   }
 }
