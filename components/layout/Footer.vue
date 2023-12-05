@@ -1,10 +1,10 @@
 <script setup>
 const navs = ref([
-  { link: "/", title: "Главная" },
-  { link: "/projects", title: "Проекты" },
-  { link: "/team", title: "Команда" },
-  { link: "/contacts", title: "Контакты" },
-]);
+  { link: '/', title: 'Главная' },
+  { link: '/projects', title: 'Проекты' },
+  { link: '/team', title: 'Команда' },
+  { link: '/contacts', title: 'Контакты' }
+])
 </script>
 
 <template>
@@ -17,8 +17,8 @@ const navs = ref([
         TechnoProg
       </NuxtLink>
 
-      <div class="about flex justify-center gap-10">
-        <p class="flex my-6 text-gray-500 dark:text-gray-400 justify-center">
+      <div class="about flex flex-col sm:flex-row justify-center gap-4 my-8">
+        <p class="flex text-gray-500 dark:text-gray-400 justify-center">
           Команда веб-разработчиков.
         </p>
         <ul
@@ -31,9 +31,7 @@ const navs = ref([
           </li>
         </ul>
       </div>
-      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
-        >© 2023 All Rights Reserved.</span
-      >
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 All Rights Reserved.</span>
     </div>
   </footer>
 </template>

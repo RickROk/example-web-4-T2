@@ -62,14 +62,13 @@ const checkedTeamMember = ref();
           :name="item.name"
           :role="item.role"
           :description="item.description"
+          :socials="item.socials"
           :img-path="item.imgPath"
           @click="checkedTeamMember = item"
           @modal-status="(res) => (isOpen = res)"
         />
       </div>
     </div>
-
-    <button class="text-white" @click="toggle">click</button>
 
     <OverlayModal
       v-if="isOpen"
@@ -80,9 +79,9 @@ const checkedTeamMember = ref();
       closable
       @close="(modalStatus) => (isOpen = modalStatus)"
     >
-      <template #header>
+      <!-- <template #header>
         <div class="flex items-center text-2xl font-bold">Лаалалла</div>
-      </template>
+      </template> -->
       <template #body>
         <!-- {{ checkedTeamMember }} -->
         <CardTeamMemberDetail :team-member="checkedTeamMember" />
