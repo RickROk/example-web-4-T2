@@ -9,7 +9,7 @@ const team = ref([
       "Повелитель собственной лени, фантазер и начинающий веб разработчик",
     imgPath:
       "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/thomas-lean.png",
-    socials: [{ link: "", img: "" }],
+    socials: [{ link: "https://t.me/Simonov_Vladimir", img: "/svgs/vk.svg" }],
   },
   {
     name: "Евдокимов Даниил",
@@ -62,6 +62,7 @@ const checkedTeamMember = ref();
           :name="item.name"
           :role="item.role"
           :description="item.description"
+          :socials="item.socials"
           :img-path="item.imgPath"
           @click="checkedTeamMember = item"
           @modal-status="(res) => (isOpen = res)"
