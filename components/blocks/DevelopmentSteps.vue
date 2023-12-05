@@ -6,7 +6,7 @@
           <h2
             class="text-4xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white"
           >
-            Schedule
+          План действий на сегодня!
           </h2>
 
           <div class="mt-4">
@@ -15,7 +15,7 @@
               title=""
               class="inline-flex items-center text-lg font-medium text-primary-600 hover:underline dark:text-primary-500"
             >
-              Learn more about our agenda
+              Статистика в картинках
               <svg
                 aria-hidden="true"
                 class="w-5 h-5 ml-2"
@@ -44,7 +44,7 @@
                 08:00 - 09:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline">Opening remarks</a>
+                <a href="#" class="hover:underline">Будим тех, кто не успел проснуться</a>
               </h3>
             </div>
 
@@ -58,7 +58,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Bergside LLC: Controlling the video traffic flows</a
+                  >Занимаем очередь за утренним кофе</a
                 >
               </h3>
             </div>
@@ -73,7 +73,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Flowbite - An Open Framework for Forensic Watermarking</a
+                  >Перекур</a
                 >
               </h3>
             </div>
@@ -87,7 +87,7 @@
                 11:00 - 12:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline">Coffee Break</a>
+                <a href="#" class="hover:underline">Обед</a>
               </h3>
             </div>
 
@@ -101,7 +101,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Scaling your brand from €0 to multimillion euros</a
+                  >Прекур</a
                 >
               </h3>
             </div>
@@ -116,7 +116,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Updates from the Open Source Multimedia community</a
+                  >Осуждаем последние новости</a
                 >
               </h3>
             </div>
@@ -131,8 +131,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Exploring the balance between customer acquisition and
-                  retention</a
+                  >Прекур</a
                 >
               </h3>
             </div>
@@ -147,7 +146,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Flowbite - An Open Framework for Forensic Watermarking</a
+                  >После обеденный ланч</a
                 >
               </h3>
             </div>
@@ -162,7 +161,7 @@
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                 <a href="#" class="hover:underline"
-                  >Scaling your brand from €0 to multimillion euros</a
+                  >Проверяем новостный ленты, соц сети</a
                 >
               </h3>
             </div>
@@ -176,7 +175,7 @@
                 17:00 - 14:00
               </p>
               <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                <a href="#" class="hover:underline">Drinks & networking</a>
+                <a href="#" class="hover:underline">Бронируем каршеринг, кто не успел тот на метро)</a>
               </h3>
             </div>
           </div>

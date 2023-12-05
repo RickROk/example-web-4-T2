@@ -8,14 +8,14 @@
           <h1
             class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
           >
-            Decentralized for a better tomorrow
+            Статистика пользователей
           </h1>
           <p
             class="mb-8 text-lg font-normal text-gray-500 lg:mb-12 lg:text-xl dark:text-gray-400"
           >
-            Buy, trade, and hold
+            Говорит сама за себя,
             <span class="font-medium text-gray-900 dark:text-white">600+</span>
-            cryptocurrencies on Flowbite
+            активных пользователей в месц, присоединяйтесь к нашей команде!
           </p>
         </div>
         <div
@@ -26,15 +26,15 @@
           >
             <h2 class="text-3xl font-extrabold leading-tight">600+</h2>
             <span class="text-teal-500 dark:text-teal-400"
-              >Cryptocurrencies listed</span
+              >Пользователей в месяц</span
             >
           </div>
           <div
             class="p-4 text-indigo-700 bg-indigo-100 rounded-lg dark:bg-indigo-900 dark:text-indigo-300"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">34 million</h2>
+            <h2 class="text-3xl font-extrabold leading-tight"> > 2 million </h2>
             <span class="text-indigo-500 dark:text-indigo-400"
-              >Diluted market cap</span
+              >Готовых проектов</span
             >
           </div>
           <div
@@ -42,23 +42,23 @@
           >
             <h2 class="text-3xl font-extrabold leading-tight">90 million</h2>
             <span class="text-purple-500 dark:text-purple-400"
-              >Registered users</span
+              >пользователей на сайте за прошедший год</span
             >
           </div>
           <div
             class="p-4 text-green-600 bg-green-100 rounded-lg dark:text-green-300 dark:bg-green-900"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">0.10%</h2>
+            <h2 class="text-3xl font-extrabold leading-tight">99%</h2>
             <span class="text-green-500 dark:text-green-400"
-              >Low transaction fees</span
+              >Довольных клиентов</span
             >
           </div>
           <div
             class="p-4 text-gray-600 bg-gray-100 rounded-lg dark:text-gray-300 dark:bg-gray-700"
           >
-            <h2 class="text-3xl font-extrabold leading-tight">0.10%</h2>
+            <h2 class="text-3xl font-extrabold leading-tight">100%</h2>
             <span class="text-gray-500 dark:text-gray-400" 
-              >Low transaction fees</span
+              >продвижение Вашего бренда</span
             >
           </div>
         </div>
