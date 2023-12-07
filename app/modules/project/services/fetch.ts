@@ -6,7 +6,7 @@ import {
 const axiosService = new AxiosCreator()
 
 const projectAPI = new AxiosService(axiosService, '').initService(
-  'https://jsonplaceholder.typicode.com/'
+  '/api/'
 )
 
 export { projectAPI }

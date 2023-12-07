@@ -1,7 +1,10 @@
 export interface IProjectData {
   id?: string | number;
+  img?: string;
+  direction?: string;
+  name?: string;
   description?: string;
-  userId?: string;
+  link?: string;
 }
 
 export interface IProject extends IProjectData {
@@ -10,13 +13,19 @@ export interface IProject extends IProjectData {
 
 export class Project implements IProject {
   private _id?: string | number
+  public img?: string
+  public direction?: string
+  public name?: string
   private _description?: string
-  private _userId?: string
+  public link?: string
 
   constructor (data: IProjectData) {
     this._id = data.id
     this._description = data.description
-    this._userId = data.userId
+    this.img = data.img
+    this.direction = data.direction
+    this.name = data.name
+    this.link = data.link
   }
 
   get id () {
@@ -25,10 +34,6 @@ export class Project implements IProject {
 
   get description () {
     return this._description
-  }
-
-  get userId () {
-    return this._userId
   }
 
   getInfo (): void {

@@ -44,7 +44,7 @@ export class ProjectService implements IProjectRepository {
       return combine(projects)
     }
     const response = await projectAPI.get<IProjectResponse[], IProjectData[]>(
-      { url: '/posts' },
+      { url: '/project/data' },
       { parseTo }
     )
     // console.log("projectAPI projectAPI response response");

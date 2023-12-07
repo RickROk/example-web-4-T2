@@ -9,8 +9,11 @@ export class ProjectParser implements IProjectParser {
     try {
       const projectData: IProjectData = {
         id: data.id,
-        description: data.title,
-        userId: data.userId + '100'
+        img: data.img,
+        direction: data.direction,
+        name: data.name,
+        description: data.description,
+        link: data.link
       }
       const project = new Project(projectData)
       return ok(project)

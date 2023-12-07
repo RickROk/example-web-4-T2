@@ -7,9 +7,11 @@ import { AxiosService } from '~/app/shared/http/instances/'
 
 export type HttpProject = {
   id?: string;
-  userId?: string;
-  body?: string;
-  title?: string;
+  img?: string;
+  direction?: string;
+  name?: string;
+  description?: string;
+  link?: string;
 };
 
 export type IProjectResponse = {
