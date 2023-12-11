@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
-  modules: ['@pinia/nuxt', 'nuxt-vitest', '@vueuse/nuxt', '@nuxtjs/color-mode'],
+  modules: ['@pinia/nuxt', 'nuxt-vitest', '@vueuse/nuxt', '@nuxtjs/color-mode', '@storybook-vue/nuxt-storybook'],
   colorMode: {
     classSuffix: ''
   },
@@ -13,6 +13,12 @@ export default defineNuxtConfig({
     config: {},
     injectPosition: 0,
     viewer: true
+  },
+
+  storybook: {
+    url: 'http://localhost:6006',
+    storybookRoute: '/__storybook__',
+    port: 6006
   },
 
   postcss: {
